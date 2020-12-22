@@ -1,5 +1,6 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
-}
+  transpileDependencies: ["vuetify"],
+  configureWebpack: {
+    entry: ["@babel/polyfill", "./src/main.ts"]
+  }
+};
